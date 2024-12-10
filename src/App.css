@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-ul > li {
+    padding: 8px 0;
+    border-bottom: 3px solid transparent;
+    transition: .5s;
+    transform-origin: right;
+    &:hover{
+        border-color: white;
+    }
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.neon-border {
+    border: 4px solid transparent;
+    border-radius: 10px;
+    animation: neon-trace 2s infinite linear;
+    text-align: center;
+    line-height: 150px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    position: relative;
   }
-  to {
-    transform: rotate(360deg);
+
+  @keyframes neon-trace {
+    0% {
+        box-shadow: 0 0 10px #eb9736, 0 0 15px #eb9736;
+    }
+    50% {
+      box-shadow: 0 0 15px #f25b4c, 0 0 30px #f25b4c;
+    }
+    100% {
+        box-shadow: 0 0 10px #eb9736, 0 0 15px #eb9736;
+    }
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .projects:hover .projectBox:not(:hover){
+       filter: brightness(0.3);
+       z-index: 0;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  .footer{
+    border-top: 4px solid transparent;
+    background: linear-gradient(90deg, #2b2a2f, #2b2a2f) padding-box,
+                  linear-gradient(90deg, #eb9736, #f25b4c) border-box;
+  }
