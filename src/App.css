@@ -48,3 +48,6 @@
     background: linear-gradient(90deg, #2b2a2f, #2b2a2f) padding-box,
                   linear-gradient(90deg, #eb9736, #f25b4c) border-box;
   }
+  .none{
+    color: #ffa6004a;
+  }

@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectsBox from '../components/ProjectsBox';
+import ProjectsBox from './ProjectsBox';
 
 export default function Projects() {
   const primaryColor = '#eb9736';

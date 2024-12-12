@@ -38,10 +38,44 @@ export default function Footer() {
                     </div>
 
                     <div className="">
-                        <h3 className="text-lg font-semibold">Projects</h3>
-                        <p className='max-w-[250px] py-3'>All of our amazing are lsited above where you can experince the fine art of our work</p>
+                        <h3 className="text-lg font-semibold">Gallery</h3>
+                        <div className='grid grid-cols-3 gap-6 mt-4 [&>*]:w-[100px]'>
+                            <img src='./gig poster 5.jpg' />
+                            <img src='./gig poster 5.jpg' />
+                            <img src='./gig poster 5.jpg' />
+                            <img src='./gig poster 5.jpg' />
+                            <img src='./gig poster 5.jpg' />
+                        </div>
                     </div>
                 </div>
+
+                <div className='w-[90%] mx-auto'>
+                    <div className='py-2 pb-6'>
+                        <div className='flex gap-4'>
+                            <div className='flex flex-col-reverse items-center'>
+                                <label className='text-[14px]'>Instagram</label>
+                        <img src='./facebook.svg' className='w-[50px] invert'/>
+                        </div>
+                        <div className='flex flex-col-reverse items-center'>
+                                <label className='text-[14px]'>Facebook</label>
+                        <img src='./instagram.svg'  className='w-[50px] invert'/>
+                        </div>
+                        <div className='flex flex-col-reverse items-center'>
+                                <label className='text-[14px]'>Discord</label>
+                        <img src='./discord.svg'  className='w-[70px] invert'/>
+                        </div>
+                        </div>
+                    </div>
+
+
+                <div className='flex justify-between border-t py-8  text-[14px]'>
+                    <h3>Since 2024</h3>
+                    <h3>@Copyright strike will be delivered to home</h3>
+                </div>
+                </div>
+
+
+                
             </div>
         </footer>
     )
