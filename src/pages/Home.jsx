@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import Form from './Form'
-import Projects from './Projects';
-import Footer from '../components/footer';
+
+
 export default function Home() {
   const primaryColor = '#eb9736';
   const secondaryColor = '#F2F4F1';
